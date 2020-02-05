@@ -99,7 +99,9 @@ namespace TinyCrm.Services
                     OrdersList.Remove(order);
                 }else if(x == 2) {
                     OrdersList.Remove(order);
-                    var opt = new AddOrderOptions(); 
+                    var opt = new AddOrderOptions(){
+						
+					}; 
                     OrdersList.Add(
                     AddOrder(custom.CustomerId, opt));
                 }    
